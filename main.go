@@ -70,8 +70,13 @@ func rootHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprintln(w, "Nigerian Phone Number Intelligence API")
-	fmt.Fprintln(w, "The server is running!")
+	if _, err := fmt.Fprintln(w, "Nigerian Phone Number Intelligence API"); err != nil {
+		return
+	}
+
+	if _, err := fmt.Fprintln(w, "The server is running!"); err != nil {
+		return
+	}
 }
 
 func healthHandler(w http.ResponseWriter, r *http.Request) {
