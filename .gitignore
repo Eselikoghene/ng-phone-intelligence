@@ -1,0 +1,21 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Go build artifacts
+*.exe
+*.test
+*.out
+coverage.out
+coverage.html
+
+# IDE and editor files
+.idea/
+.vscode/
+
+# macOS
+.DS_Store
+
+# Local logs
+*.log
